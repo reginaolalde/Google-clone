@@ -1,0 +1,187 @@
+body{
+    /* Texto justificado */
+    text-align: justify;
+    /* Color de fondo de la página */
+    background-color:#ffffff;
+    /* Margen predeterminado */
+    margin: 0;
+    /* Margen para adentro */
+    padding: 0;
+    /* Tamaño de texto */
+    font-size: 13px;
+    /* Fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**********************************************************************/
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+}
+
+/* Para entrar a otro elemento dentro del header (elemento hijo)*/
+header nav{
+    background-color: rgb(255, 255, 255);
+    /*Como se puede mover el elemento*/
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* Para llamar clase dentro de un header*/
+header nav .nav-right-section{
+    background-color: rgb(255, 255, 255);
+    /*Eliminar viñetas*/
+    list-style: none;
+    width: 200px;
+    /*Poner los elementos seguidos de forma horizontal*/
+    display: flex;
+    /*El display me permite utilizar el justify-content*/
+    justify-content: center;
+    align-items: center;
+    /*Altura automática*/
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb(21, 21, 21);
+    /*Línea de bajo de (la que aparece cuando es un link)*/
+    text-decoration: none;
+    /*Margen derecho*/
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Cuando utilizamos una imagen de fondo esta propiedad nos permite adecuar el tamaño del ícono al tamaño de la caja*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+}
+
+nav .nav-right-section img{
+    /* Margin left - margen a la izquierda SOLAMENTE */
+    margin-left: 20px;
+    /* Redondear */
+    border-radius: 100px;
+    /* width - anchura */
+    width: 35px;
+}
+
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+/* Sección logo */
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/* Logo Google */
+main .main-logo img{
+    height: 100px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 550px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*Sección input-container*/
+main .main-input-container{
+
+    /*Ancho de línea, estilo y color*/
+     border: 1px solid #d6d6d6;
+     border-radius: 30px;
+     width: 530px;
+     background-size: contain;
+     padding-left: 4%;
+     display: flex;
+     justify-content: center;
+     background-repeat: no-repeat;
+     align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    /*OUTLINE -QUITA EL BORDE NEGRO*/
+    border: none;
+    /*OUTLINE - quita el borde que aparece al seleccionar ell input*/
+    outline: none;
+}
+
+/*Diseño de la lupa de búsqueda*/
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    /*Ícono contenido en el espacio*/
+    background-size: contain;
+    background-position: center;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+}
+
+main .main-buttons{
+    width: 550px;
+    /*Equilibrio entre el margen derecho y el margen izquierdo*/
+    margin: 0 auto;
+    /*Display nos permite poner los elementos seguidos*/
+
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 15px;
+    padding: 0 15px;
+}
+
+/*Nos permite agregarle el diseño al poner el cursor sobre el elemento*/
+main .main-input-container :hover{
+    /*Sombra para los bordes*/
+    box-shadow: 0 0 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /*Ancho de linea- estilo de linea - color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
